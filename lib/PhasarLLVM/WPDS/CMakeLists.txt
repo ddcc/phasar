@@ -16,7 +16,7 @@ target_link_libraries(phasar_wpds
   phasar_utils
   phasar_ifdside
 
-  LLVMCore
+  LLVM
 )
 
 set_target_properties(phasar_wpds

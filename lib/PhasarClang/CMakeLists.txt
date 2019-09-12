@@ -36,8 +36,7 @@ target_link_libraries(phasar_clang
   clangLex
   clangBasic
 
-  LLVMSupport
-  LLVMCore
+  LLVM
 
   boost_log
   boost_system

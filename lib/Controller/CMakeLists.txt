@@ -17,7 +17,7 @@ target_link_libraries(phasar_controller
   phasar_mono
   phasar_plugins
 
-  LLVMCore
+  LLVM
 
   curl
   boost_log

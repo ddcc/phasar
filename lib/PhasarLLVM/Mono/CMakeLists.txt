@@ -17,7 +17,7 @@ target_link_libraries(phasar_mono
   phasar_utils
   phasar_phasarllvm_utils
 
-  LLVMCore
+  LLVM
 )
 
 set_target_properties(phasar_mono

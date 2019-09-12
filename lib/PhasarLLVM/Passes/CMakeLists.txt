@@ -17,9 +17,7 @@ target_link_libraries(phasar_passes
 
   boost_log
 
-  LLVMCore
-  LLVMSupport
-  LLVMAnalysis
+  LLVM
 )
 
 set_target_properties(phasar_passes

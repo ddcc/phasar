@@ -42,7 +42,7 @@ function(add_phasar_unittest test_name)
     ${CMAKE_DL_LIBS}
     ${CMAKE_THREAD_LIBS_INIT}
     ${CLANG_LIBRARIES}
-    ${llvm_libs}
+    LLVM
     curl
     gtest
   )

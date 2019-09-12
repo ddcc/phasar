@@ -15,19 +15,7 @@ target_link_libraries(phasar_db
   phasar_passes
   phasar_utils
 
-  LLVMSupport
-  LLVMCore
-  LLVMVectorize
-  LLVMScalarOpts
-  LLVMInstrumentation
-  LLVMObjCARCOpts
-  LLVMTransformUtils
-  LLVMCodeGen
-  LLVMAnalysis
-  LLVMipo
-  LLVMIRReader
-  LLVMInstCombine
-  LLVMLinker
+  LLVM
 
   ${Boost_LIBRARIES}
   ${SQLITE3_LIBRARY}

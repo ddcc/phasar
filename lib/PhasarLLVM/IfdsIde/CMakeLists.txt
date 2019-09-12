@@ -19,7 +19,7 @@ target_link_libraries(phasar_ifdside
   phasar_controlflow
   phasar_phasarllvm_utils
 
-  LLVMCore
+  LLVM
 )
 
 set_target_properties(phasar_ifdside

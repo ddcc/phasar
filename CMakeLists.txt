@@ -136,26 +136,6 @@ if (NOT PHASAR_IN_TREE)
   link_directories(${LLVM_LIB_PATH} ${LLVM_LIBRARY_DIRS})
 endif()
 
-llvm_map_components_to_libnames(llvm_libs
-  coverage
-  coroutines
-  libdriver
-  lto
-  support
-  analysis
-  bitwriter
-  core
-  ipo
-  irreader
-  instcombine
-  instrumentation
-  linker
-  objcarcopts
-  scalaropts
-  transformutils
-  codegen
-  vectorize
-)
 add_definitions(${LLVM_DEFINITIONS})
 
 # Clang
@@ -265,7 +245,7 @@ target_link_libraries(phasar
   ${CMAKE_DL_LIBS}
   ${CMAKE_THREAD_LIBS_INIT}
   ${CLANG_LIBRARIES}
-  ${llvm_libs}
+  LLVM
   curl
   gtest
 )
@@ -294,7 +274,7 @@ target_link_libraries(myphasartool
   ${CMAKE_DL_LIBS}
   ${CMAKE_THREAD_LIBS_INIT}
   ${CLANG_LIBRARIES}
-  ${llvm_libs}
+  LLVM
   curl
   gtest
 )
@@ -327,7 +307,7 @@ target_link_libraries(wpdstest
   ${CMAKE_DL_LIBS}
   ${CMAKE_THREAD_LIBS_INIT}
   ${CLANG_LIBRARIES}
-  ${llvm_libs}
+  LLVM
 )
 
 target_link_libraries(syncpdstest
@@ -355,7 +335,7 @@ target_link_libraries(syncpdstest
   ${Boost_LIBRARIES}
   ${CMAKE_DL_LIBS}
   ${CMAKE_THREAD_LIBS_INIT}
-  ${llvm_libs}
+  LLVM
 )
 
 target_link_libraries(boomerangtest
@@ -383,7 +363,7 @@ target_link_libraries(boomerangtest
   ${Boost_LIBRARIES}
   ${CMAKE_DL_LIBS}
   ${CMAKE_THREAD_LIBS_INIT}
-  ${llvm_libs}
+  LLVM
 )
 
 # Add Phasar unittests and .ll file generation

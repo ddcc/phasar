@@ -32,7 +32,7 @@ foreach(plugin ${PLUGINS_SO})
     phasar_config
     phasar_utils
     phasar_ifdside
-    LLVMCore
+    LLVM
     )
 endforeach()
 

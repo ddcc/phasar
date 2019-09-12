@@ -21,9 +21,7 @@ endif()
 target_link_libraries(phasar_utils
   phasar_config
 
-  LLVMCore
-  LLVMSupport
-  LLVMBitWriter
+  LLVM
 
   boost_log
 

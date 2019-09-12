@@ -18,9 +18,7 @@ target_link_libraries(phasar_pointer
 
   boost_log
 
-  LLVMCore
-  LLVMSupport
-  LLVMAnalysis
+  LLVM
 )
 
 set_target_properties(phasar_pointer
